@@ -1,0 +1,22 @@
+<f:layout name="Default"/>
+
+<f:section name="Main">
+    <v:condition.context.isDevelopment>
+        <f:then>
+            <v:asset.script name="app" path="EXT:vue_typo3_app/Resources/Public/JavaScript/app.js"/>
+        </f:then>
+        <f:else>
+            <v:asset.script name="app" path="EXT:vue_typo3_app/Resources/Public/JavaScript/app.min.js"/>
+        </f:else>
+    </v:condition.context.isDevelopment>
+    <v:asset.script name="settings" standalone="1" movable="0">
+        vueTypo3App = typeof vueTypo3App === 'undefined' ? {} : vueTypo3App;
+        vueTypo3App.debug = <v:condition.context.isDevelopment><f:then>true</f:then><f:else>false</f:else></v:condition.context.isDevelopment>;
+        vueTypo3App.action = typeof vueTypo3App.action === 'undefined' ? {} : vueTypo3App.action;
+        vueTypo3App.action.test = '<tsr:uri.ajaxAction
+            absolute="1" action="test" controller="Ajax" pluginName="App" contextRecord="tt_content:1" pageUid="1" />';
+    </v:asset.script>
+    <div id="app">
+        <app></app>
+    </div>
+</f:section>

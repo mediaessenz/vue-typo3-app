@@ -1,0 +1,19 @@
+{
+	"name": "mediaessenz/vue-typo3-app",
+	"description": "Vue.js TYPO3 Demo App",
+	"type": "typo3-cms-extension",
+	"keywords": [
+		"TYPO3 CMS",
+		"plugin"
+	],
+	"homepage": "http://www.mediaessenz.de",
+	"license": "GPL-2.0+",
+	"support": {
+		"issues": "http://github.com/mediaessenz/vue-typo3-app/issues"
+	},
+	"autoload": {
+		"psr-4": {
+			"MediaEssenz\\VueTypo3App\\": "Classes/"
+		}
+	}
+}

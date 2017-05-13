@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-05-13T11:19:05+02:00" product-name="vue_typo3_app">
+		<header/>
+		<body>
+			<trans-unit id="plugin.App"><source>plugin.App</source></trans-unit>
+		</body>
+	</file>
+</xliff>
