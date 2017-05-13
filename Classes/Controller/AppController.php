@@ -12,6 +12,6 @@ class AppController extends ActionController
      */
     public function mainAction()
     {
-
+        $this->configurationManager->getContentObject()->currentRecord = 'tt_content:' . $this->configurationManager->getContentObject()->data['uid'];
     }
 }
